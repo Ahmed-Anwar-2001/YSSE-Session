@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Skills & AI Synergy | 2025 Master Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neo-bg': '#f4f4f0',
+                        'neo-black': '#121212',
+                        'neo-white': '#ffffff',
+                        'neo-pink': '#ff90e8',
+                        'neo-yellow': '#ffc900',
+                        'neo-blue': '#23a6d5',
+                        'neo-green': '#00ff9d',
+                        'neo-purple': '#a29bfe',
+                        'neo-red': '#ff4757',
+                        'neo-orange': '#ff6b6b',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'mono': ['Space Mono', 'monospace'],
+                        'display': ['Archivo Black', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'hard': '4px 4px 0px 0px #000000',
+                        'hard-lg': '8px 8px 0px 0px #000000',
+                        'hard-xl': '12px 12px 0px 0px #000000',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f4f4f0;
+            background-image: radial-gradient(#000 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .scroll-mt {
+            scroll-margin-top: 100px;
+        }
+        /* Brutalist Scrollbar */
+        ::-webkit-scrollbar {
+            width: 16px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fff;
+            border-left: 3px solid #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ffc900;
+            border: 3px solid #000;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff90e8;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 2px black;
+            color: transparent;
+        }
+        /* Neural Network Visuals */
+        .node {
+            width: 40px;
+            height: 40px;
+            border: 3px solid black;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            z-index: 10;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="text-neo-black font-sans antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full z-50 bg-neo-white border-b-4 border-black p-4 flex flex-col md:flex-row justify-between items-center shadow-hard overflow-x-auto">
+        <div class="font-display text-xl tracking-tighter uppercase flex items-center gap-2 mb-2 md:mb-0 min-w-max">
+            <span class="bg-black text-white px-2 py-1">AI SYNERGY</span>
+            <!-- <span class="text-sm font-mono hidden md:inline">2025 SESSION</span> -->
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 font-mono text-xs md:text-sm font-bold min-w-max">
+            <a href="#foundations" class="bg-neo-yellow border-2 border-black px-3 py-1 hover:shadow-hard transition-all">BASICS</a>
+            <a href="#papers" class="bg-neo-purple border-2 border-black px-3 py-1 hover:shadow-hard transition-all">PAPERS</a>
+            <a href="#fields" class="bg-neo-green border-2 border-black px-3 py-1 hover:shadow-hard transition-all">FIELDS</a>
+            <a href="#industry-impact" class="bg-neo-orange border-2 border-black px-3 py-1 hover:shadow-hard transition-all">IMPACT</a>
+            <a href="#research-industry" class="bg-neo-blue border-2 border-black px-3 py-1 hover:shadow-hard transition-all">R&D vs IND</a>
+            <a href="#market" class="bg-neo-pink border-2 border-black px-3 py-1 hover:shadow-hard transition-all">MARKET</a>
+            <a href="#journey" class="bg-black text-white border-2 border-black px-3 py-1 hover:bg-gray-800 transition-all">MY USE CASES</a>
+        </div>
+    </nav>
+
+    <!-- HEADER / INTRO -->
+    <header class="pt-40 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="bg-white border-4 border-black p-8 md:p-16 shadow-hard-xl relative">
+            <div class="absolute -top-6 -right-6 bg-neo-red text-white font-mono font-bold px-4 py-2 border-4 border-black rotate-3 shadow-hard">
+                SPEAKER: AHMED ANWAR
+            </div>
+            
+            <h1 class="font-display text-5xl md:text-8xl leading-none mb-6">
+                HUMAN SKILLS<br>
+                <span class="text-stroke md:text-stroke-4">AI SYNERGY</span>
+            </h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t-4 border-black pt-8 mt-8">
+                <div>
+                    <strong class="font-display text-2xl block mb-2 bg-neo-yellow inline-block px-1">THE CONTEXT</strong>
+                    <p class="font-mono text-sm md:text-base">
+                        Discussion at <span class="font-bold border-b-2 border-black">YSSE Academy</span>.<br>
+                        Duration: 45 Mins.<br>
+                        Topic: Navigating the Future of Work in 2025.
+                    </p>
+                </div>
+                <div>
+                    <strong class="font-display text-2xl block mb-2 bg-neo-green inline-block px-1">THE REALITY</strong>
+                    <p class="font-mono text-sm md:text-base">
+                        We are moving from "Chatbots" to <strong>"Agents"</strong>.<br>
+                        From "Pattern Matching" to <strong>"Reasoning"</strong>.<br>
+                        From "Replacing Humans" to <strong>"Centaur Workflows"</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: FOUNDATIONS -->
+    <section id="foundations" class="py-20 px-6 md:px-12 scroll-mt bg-white border-y-4 border-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12 border-b-4 border-black inline-block">01. WHAT IS IT?</h2>
+            
+            <!-- Russian Doll Analogy -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div class="bg-neo-bg border-4 border-black p-8 shadow-hard">
+                    <h3 class="font-display text-2xl mb-6">THE RUSSIAN DOLL ANALOGY</h3>
+                    <div class="space-y-6">
+                        <div class="border-4 border-black p-6 bg-white relative">
+                            <span class="absolute -top-3 left-4 bg-black text-white px-2 font-mono text-xs">THE OUTER SHELL</span>
+                            <strong class="text-xl font-display">ARTIFICIAL INTELLIGENCE (AI)</strong>
+                            <p class="font-mono text-sm mt-2">Any technique that enables computers to mimic human behavior. Includes basic "If-Then" logic rules from the 1950s.</p>
+                            
+                            <div class="border-4 border-black p-6 mt-6 bg-neo-blue/20 relative">
+                                <span class="absolute -top-3 left-4 bg-neo-blue text-black border-2 border-black px-2 font-mono text-xs font-bold">THE INNER SHELL</span>
+                                <strong class="text-xl font-display">MACHINE LEARNING (ML)</strong>
+                                <p class="font-mono text-sm mt-2">Machines that "learn" from data without being explicitly programmed for every rule. Statistical methods.</p>
+                                
+                                <div class="border-4 border-black p-6 mt-6 bg-neo-green relative">
+                                    <span class="absolute -top-3 left-4 bg-black text-white px-2 font-mono text-xs">THE CORE</span>
+                                    <strong class="text-xl font-display">DEEP LEARNING (DL)</strong>
+                                    <p class="font-mono text-sm mt-2 font-bold">Inspired by the human brain (Neural Networks). This is the engine behind ChatGPT, FaceID, and Self-Driving.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Paradigms -->
+                <div>
+                    <h3 class="font-display text-2xl mb-6">THE 3 LEARNING PARADIGMS</h3>
+                    <div class="space-y-4">
+                        <div class="bg-neo-pink border-4 border-black p-4 shadow-hard flex flex-col h-auto">
+                            <div class="flex justify-between items-center border-b-2 border-black pb-2 mb-2">
+                                <h4 class="font-bold font-mono">1. SUPERVISED</h4>
+                                <span class="text-xs bg-black text-white px-2 py-1">Teacher + Student</span>
+                            </div>
+                            <p class="font-mono text-sm"><strong>Formula:</strong> Input + Label = Output.</p>
+                            <p class="font-mono text-xs mt-2 bg-white/50 p-2 border border-black">
+                                <strong>My Example:</strong> Face Verification. I fed the model pairs of photos labeled "Same Person" or "Different Person".
+                            </p>
+                        </div>
+
+                        <div class="bg-neo-yellow border-4 border-black p-4 shadow-hard flex flex-col h-auto">
+                            <div class="flex justify-between items-center border-b-2 border-black pb-2 mb-2">
+                                <h4 class="font-bold font-mono">2. UNSUPERVISED</h4>
+                                <span class="text-xs bg-black text-white px-2 py-1">Sorting Lego</span>
+                            </div>
+                            <p class="font-mono text-sm"><strong>Formula:</strong> Input Only (Find Patterns).</p>
+                            <p class="font-mono text-xs mt-2 bg-white/50 p-2 border border-black">
+                                <strong>My Example:</strong> TCB News Pipeline. Grouping millions of articles into clusters (e.g., "Onion Price Spike") without knowing the topics beforehand.
+                            </p>
+                        </div>
+
+                        <div class="bg-neo-purple border-4 border-black p-4 shadow-hard flex flex-col h-auto">
+                            <div class="flex justify-between items-center border-b-2 border-black pb-2 mb-2">
+                                <h4 class="font-bold font-mono">3. REINFORCEMENT</h4>
+                                <span class="text-xs bg-black text-white px-2 py-1">Dog Training</span>
+                            </div>
+                            <p class="font-mono text-sm"><strong>Formula:</strong> Action + Reward/Punishment.</p>
+                            <p class="font-mono text-xs mt-2 bg-white/50 p-2 border border-black">
+                                <strong>Real World:</strong> Stock Trading Agents & Robotics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEEP LEARNING & NEURAL NETWORKS DEEP DIVE -->
+            <div class="bg-neo-black text-white p-8 border-4 border-black shadow-hard relative overflow-hidden">
+                <h3 class="font-display text-3xl mb-8 text-neo-green relative z-10">DEEP DIVE: NEURAL NETWORKS</h3>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+                    <!-- Text Explainer -->
+                    <div class="font-mono">
+                        <strong class="text-xl block mb-4 border-b-2 border-neo-green pb-1 text-neo-green">THE NEURON</strong>
+                        <p class="text-sm mb-6">
+                            Think of a neuron as a simple mathematical function. It takes inputs, assigns importance (weight), and fires if it passes a threshold.
+                        </p>
+                        <div class="bg-gray-800 p-4 border border-gray-600 text-center mb-8">
+                            Input (x) → <span class="text-neo-pink font-bold">Weight (w)</span> → Activation(ReLU) → Output (y)
+                        </div>
+                        
+                        <strong class="text-xl block mb-4 border-b-2 border-neo-green pb-1 text-neo-green">THE LAYERS</strong>
+                        <ul class="space-y-2 text-sm">
+                            <li><span class="text-neo-blue font-bold">INPUT:</span> Raw data (Pixels of an ID card).</li>
+                            <li><span class="text-neo-purple font-bold">HIDDEN:</span> Magic happens here. 
+                                <br><span class="text-xs text-gray-400 ml-4">Layer 1: Edges | Layer 2: Shapes | Layer 3: Noses/Eyes.</span>
+                            </li>
+                            <li><span class="text-neo-red font-bold">OUTPUT:</span> Prediction ("Real ID" or "Fake").</li>
+                        </ul>
+                    </div>
+
+                    <!-- VISUAL REPRESENTATION (CONNECTED) -->
+                    <div class="bg-white text-black p-6 border-4 border-gray-600 rounded-lg flex items-center justify-center min-h-[350px]">
+                        <div class="flex gap-16 items-center relative w-full h-[300px] justify-center">
+                            
+                            <!-- SVG Lines (Absolute overlay) -->
+                            <svg class="absolute w-full h-full top-0 left-0 pointer-events-none" style="z-index: 0;">
+                                <!-- Input to Hidden Connections (Fully Connected) -->
+                                <line x1="15%" y1="20%" x2="50%" y2="10%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="20%" x2="50%" y2="35%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="20%" x2="50%" y2="60%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="20%" x2="50%" y2="85%" stroke="#ccc" stroke-width="1" />
+
+                                <line x1="15%" y1="50%" x2="50%" y2="10%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="50%" x2="50%" y2="35%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="50%" x2="50%" y2="60%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="50%" x2="50%" y2="85%" stroke="#ccc" stroke-width="1" />
+
+                                <line x1="15%" y1="80%" x2="50%" y2="10%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="80%" x2="50%" y2="35%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="80%" x2="50%" y2="60%" stroke="#ccc" stroke-width="1" />
+                                <line x1="15%" y1="80%" x2="50%" y2="85%" stroke="#ccc" stroke-width="1" />
+
+                                <!-- Hidden to Output Connections (Fully Connected) -->
+                                <line x1="50%" y1="10%" x2="85%" y2="35%" stroke="#000" stroke-width="2" />
+                                <line x1="50%" y1="10%" x2="85%" y2="65%" stroke="#000" stroke-width="2" />
+
+                                <line x1="50%" y1="35%" x2="85%" y2="35%" stroke="#000" stroke-width="2" />
+                                <line x1="50%" y1="35%" x2="85%" y2="65%" stroke="#000" stroke-width="2" />
+
+                                <line x1="50%" y1="60%" x2="85%" y2="35%" stroke="#000" stroke-width="2" />
+                                <line x1="50%" y1="60%" x2="85%" y2="65%" stroke="#000" stroke-width="2" />
+
+                                <line x1="50%" y1="85%" x2="85%" y2="35%" stroke="#000" stroke-width="2" />
+                                <line x1="50%" y1="85%" x2="85%" y2="65%" stroke="#000" stroke-width="2" />
+                            </svg>
+
+                            <!-- Input Layer -->
+                            <div class="flex flex-col justify-between h-[80%] z-10 w-[10%] items-center">
+                                <div class="node bg-neo-blue shadow-hard text-xs" title="Input 1">X1</div>
+                                <div class="node bg-neo-blue shadow-hard text-xs" title="Input 2">X2</div>
+                                <div class="node bg-neo-blue shadow-hard text-xs" title="Input 3">X3</div>
+                                <span class="text-xs font-bold mt-2 absolute bottom-[-20px]">INPUT</span>
+                            </div>
+
+                            <!-- Hidden Layer -->
+                            <div class="flex flex-col justify-between h-[90%] z-10 w-[10%] items-center">
+                                <div class="node bg-neo-purple shadow-hard text-xs">H1</div>
+                                <div class="node bg-neo-purple shadow-hard text-xs">H2</div>
+                                <div class="node bg-neo-purple shadow-hard text-xs">H3</div>
+                                <div class="node bg-neo-purple shadow-hard text-xs">H4</div>
+                                <span class="text-xs font-bold mt-2 absolute bottom-[-20px]">HIDDEN</span>
+                            </div>
+
+                            <!-- Output Layer -->
+                            <div class="flex flex-col justify-center gap-16 h-[80%] z-10 w-[10%] items-center">
+                                <div class="node bg-neo-red shadow-hard text-xs">Y1</div>
+                                <div class="node bg-neo-red shadow-hard text-xs">Y2</div>
+                                <span class="text-xs font-bold mt-2 absolute bottom-[-20px]">OUTPUT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: WHY NOW? -->
+    <section id="why-now" class="py-20 px-6 md:px-12 scroll-mt bg-neo-black text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12 text-neo-green">02. WHY NOW?</h2>
+            <p class="font-mono text-xl mb-12 border-l-4 border-neo-green pl-4">
+                Why didn't this happen in 1990? The math existed. The dream existed. What changed?
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Factor 1 -->
+                <div class="border-4 border-white p-6 hover:bg-white hover:text-black transition-colors group">
+                    <span class="font-display text-6xl block mb-4 text-neo-green group-hover:text-black">1</span>
+                    <h3 class="font-display text-2xl mb-4">DATA EXPLOSION</h3>
+                    <p class="font-mono text-sm leading-relaxed">
+                        The internet gave us the library. In 2025, we aren't just reading it; we are training on it. 
+                        <br><br>
+                        The transition from physical archives to <strong>digital lakes (Common Crawl, YouTube, GitHub)</strong> provided the raw material necessary for Large Language Models.
+                    </p>
+                </div>
+
+                <!-- Factor 2 -->
+                <div class="border-4 border-white p-6 hover:bg-white hover:text-black transition-colors group">
+                    <span class="font-display text-6xl block mb-4 text-neo-pink group-hover:text-black">2</span>
+                    <h3 class="font-display text-2xl mb-4">COMPUTE (GPUs)</h3>
+                    <p class="font-mono text-sm leading-relaxed">
+                        NVIDIA video game chips turned out to be perfect for the <strong>Matrix Math</strong> needed for AI. 
+                        <br><br>
+                        We effectively "accidentally" built supercomputers while trying to make video games look better.
+                    </p>
+                </div>
+
+                <!-- Factor 3 -->
+                <div class="border-4 border-white p-6 hover:bg-white hover:text-black transition-colors group">
+                    <span class="font-display text-6xl block mb-4 text-neo-blue group-hover:text-black">3</span>
+                    <h3 class="font-display text-2xl mb-4">ALGORITHMS</h3>
+                    <p class="font-mono text-sm leading-relaxed">
+                        We cracked the code. 
+                        <br><br>
+                        <strong>Backpropagation (1986)</strong> allowed learning. 
+                        <br>
+                        <strong>Transformers (2017)</strong> allowed context.
+                        <br>
+                        Without "Attention Is All You Need", there is no ChatGPT.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: HALL OF FAME (RESEARCH) -->
+    <section id="papers" class="py-20 px-6 md:px-12 scroll-mt bg-white border-b-4 border-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12 border-b-4 border-black inline-block">03. RESEARCH HALL OF FAME</h2>
+            <p class="font-mono text-lg mb-8">The papers that changed the world. Knowing these separates engineers from users.</p>
+
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Paper 1 -->
+                <div class="border-l-8 border-neo-red pl-6 py-4 bg-gray-50 hover:bg-white transition-all shadow-sm hover:shadow-md">
+                    <div class="flex flex-wrap items-center gap-4 mb-2">
+                        <span class="bg-black text-white px-2 font-mono font-bold">2012</span>
+                        <h3 class="font-display text-2xl">ALEXNET (ImageNet Classification)</h3>
+                        <a href="https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf" target="_blank" class="text-xs underline text-blue-600 font-mono">Read Paper ↗</a>
+                    </div>
+                    <p class="font-mono text-sm">The "Big Bang" of Computer Vision. Proved Deep Learning could beat human-coded rules.</p>
+                </div>
+
+                <!-- Paper 2 -->
+                <div class="border-l-8 border-neo-blue pl-6 py-4 bg-gray-50 hover:bg-white transition-all shadow-sm hover:shadow-md">
+                    <div class="flex flex-wrap items-center gap-4 mb-2">
+                        <span class="bg-black text-white px-2 font-mono font-bold">2015</span>
+                        <h3 class="font-display text-2xl">RESNET (Deep Residual Learning)</h3>
+                        <a href="https://arxiv.org/abs/1512.03385" target="_blank" class="text-xs underline text-blue-600 font-mono">Read Paper ↗</a>
+                    </div>
+                    <p class="font-mono text-sm">Allowed networks to go from 20 layers to 100+ layers without breaking. The foundation of modern image recognition.</p>
+                </div>
+
+                <!-- Paper 3 -->
+                <div class="border-l-8 border-neo-yellow pl-6 py-4 bg-gray-50 hover:bg-white transition-all shadow-sm hover:shadow-md">
+                    <div class="flex flex-wrap items-center gap-4 mb-2">
+                        <span class="bg-black text-white px-2 font-mono font-bold">2017</span>
+                        <h3 class="font-display text-2xl">TRANSFORMERS (Attention Is All You Need)</h3>
+                        <a href="https://arxiv.org/abs/1706.03762" target="_blank" class="text-xs underline text-blue-600 font-mono">Read Paper ↗</a>
+                    </div>
+                    <p class="font-mono text-sm">Google's paper that killed RNNs. Introduced "Self-Attention". The "T" in GPT.</p>
+                </div>
+
+                <!-- Paper 4 (New Agentic) -->
+                <div class="border-l-8 border-neo-purple pl-6 py-4 bg-gray-50 hover:bg-white transition-all shadow-sm hover:shadow-md">
+                    <div class="flex flex-wrap items-center gap-4 mb-2">
+                        <span class="bg-black text-white px-2 font-mono font-bold">2022</span>
+                        <h3 class="font-display text-2xl">CHAIN-OF-THOUGHT PROMPTING</h3>
+                        <a href="https://arxiv.org/abs/2201.11903" target="_blank" class="text-xs underline text-blue-600 font-mono">Read Paper ↗</a>
+                    </div>
+                    <p class="font-mono text-sm">Proved that asking AI to "think step by step" massively improves reasoning capabilities. The basis for Gemini 3 and GPT-o1.</p>
+                </div>
+
+                
+                <!-- Paper 5 (Reasoning) -->
+                <div class="border-l-8 border-neo-green pl-6 py-4 bg-gray-50 hover:bg-white transition-all shadow-sm hover:shadow-md">
+                    <div class="flex flex-wrap items-center gap-4 mb-2">
+                        <span class="bg-black text-white px-2 font-mono font-bold">2023</span>
+                        <h3 class="font-display text-2xl">GENERATIVE AGENTS (The Stanford Town)</h3>
+                        <a href="https://arxiv.org/abs/2304.03442" target="_blank" class="text-xs underline text-blue-600 font-mono">Read Paper ↗</a>
+                    </div>
+                    <p class="font-mono text-sm">Simulated a town of 25 AI agents who woke up, cooked breakfast, and formed opinions. The birth of <strong>Agentic AI</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: FIELDS & TOOLS -->
+    <section id="fields" class="py-20 px-6 md:px-12 scroll-mt bg-neo-bg">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12 border-b-4 border-black inline-block">04. FIELDS & TOOLS</h2>
+
+            <div class="space-y-16">
+                
+                <!-- FIELD: NLP & GEN AI -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 border-4 border-black shadow-hard-lg bg-white">
+                    <div class="lg:col-span-4 bg-neo-purple p-8 border-b-4 lg:border-b-0 lg:border-r-4 border-black flex flex-col justify-center">
+                        <h3 class="font-display text-4xl md:text-5xl text-white text-stroke">NLP &<br>GEN AI</h3>
+                        <p class="font-mono font-bold mt-4">The Brain & Tongue</p>
+                    </div>
+                    <div class="lg:col-span-8 p-8 font-mono">
+                        <div class="mb-6">
+                            <strong class="bg-black text-white px-2 py-1 text-sm">LATEST MODELS (2025)</strong>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <li class="border-2 border-black p-3 bg-gray-50 hover:bg-neo-green transition-colors">
+                                    <strong>Gemini 3 (Google):</strong> State-of-the-art multimodal reasoning. Massive context window (2M+).
+                                </li>
+                                <li class="border-2 border-black p-3 bg-gray-50 hover:bg-neo-green transition-colors">
+                                    <strong>GPT-5 (OpenAI):</strong> Rumored release late 2025. Expected to solve "Reasoning" at a PhD level.
+                                </li>
+                                <li class="border-2 border-black p-3 bg-gray-50 hover:bg-neo-green transition-colors">
+                                    <strong>Meta Omnilingual:</strong> A single model supporting <strong>1,600+ languages</strong>. Crucial for low-resource languages like Bengali dialects.
+                                </li>
+                                <li class="border-2 border-black p-3 bg-gray-50 hover:bg-neo-green transition-colors">
+                                    <strong>Custom STT/TTS:</strong> What I am building. Standard models fail at local dialects (Sylheti). We need custom fine-tuning.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIELD: COMPUTER VISION -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 border-4 border-black shadow-hard-lg bg-white">
+                    <div class="lg:col-span-4 bg-neo-blue p-8 border-b-4 lg:border-b-0 lg:border-r-4 border-black flex flex-col justify-center">
+                        <h3 class="font-display text-4xl md:text-5xl text-white text-stroke">COMPUTER<br>VISION</h3>
+                        <p class="font-mono font-bold mt-4">The Eyes</p>
+                    </div>
+                    <div class="lg:col-span-8 p-8 font-mono">
+                        <div class="mb-6">
+                            <strong class="bg-black text-white px-2 py-1 text-sm">CORE TECH & TOOLS</strong>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                                <div>
+                                    <strong class="block text-neo-blue mb-2">ARCHITECTURES:</strong>
+                                    <ul class="list-disc ml-4 space-y-1 text-sm">
+                                        <li><strong>ViT (Vision Transformer):</strong> The new standard. Beat CNNs in my fraud detection tests.</li>
+                                        <li><strong>Swin Transformer:</strong> Hierarchical design, great for dense prediction.</li>
+                                        <li><strong>ResNet:</strong> The reliable old guard (CNN). Good, but ViT is better for global context.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong class="block text-neo-blue mb-2">PLATFORMS:</strong>
+                                    <ul class="list-disc ml-4 space-y-1 text-sm">
+                                        <li><strong>Roboflow:</strong> For managing datasets and deploying models quickly.</li>
+                                        <li><strong>SAM 3 (Segment Anything):</strong> Meta's model that can "cut out" any object from an image without training.</li>
+                                        <li><strong>YOLOv10:</strong> Real-time object detection (Speed king).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIELD: AGENTIC AI -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 border-4 border-black shadow-hard-lg bg-white">
+                    <div class="lg:col-span-4 bg-neo-orange p-8 border-b-4 lg:border-b-0 lg:border-r-4 border-black flex flex-col justify-center">
+                        <h3 class="font-display text-4xl md:text-5xl text-white text-stroke">AGENTIC<br>WORKFLOWS</h3>
+                        <p class="font-mono font-bold mt-4">The Hands</p>
+                    </div>
+                    <div class="lg:col-span-8 p-8 font-mono">
+                        <div class="mb-6">
+                            <strong class="bg-black text-white px-2 py-1 text-sm">THE SHIFT: CHAT -> ACTION</strong>
+                            <p class="text-sm mt-2 mb-4">
+                                We are no longer just "talking" to AI. We are giving it tools (Browsing, Email, Code Execution).
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="border-2 border-black p-3 bg-neo-yellow/20">
+                                    <strong>Bolt.new</strong>
+                                    <p class="text-xs mt-1">AI Web Developer. Prompts -> Full Stack App.</p>
+                                </div>
+                                <div class="border-2 border-black p-3 bg-neo-yellow/20">
+                                    <strong>Lovable.dev</strong>
+                                    <p class="text-xs mt-1">GPT-to-Software. Rapid UI prototyping.</p>
+                                </div>
+                                <div class="border-2 border-black p-3 bg-neo-yellow/20">
+                                    <strong>LangChain</strong>
+                                    <p class="text-xs mt-1">The glue code to connect LLMs to your data.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: IMPACT ACROSS SECTORS (Massively Expanded) -->
+    <section id="industry-impact" class="py-20 px-6 md:px-12 bg-neo-black text-white scroll-mt">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12 text-neo-yellow">05. IMPACT ACROSS SECTORS</h2>
+            <p class="font-mono text-lg mb-12 text-gray-300 max-w-3xl">
+                AI is not just for coders. It has infiltrated every vertical. Here is how tools are saving lives, time, and money in 2025.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. CREATIVE ARTS (Music & Video) -->
+                <div class="border-4 border-white p-6 bg-gray-900 hover:border-neo-pink transition-all">
+                    <h3 class="font-display text-2xl text-neo-pink mb-4">CREATIVE ARTS</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">GOAL: Impossible production value.</p>
+                    <ul class="space-y-4 font-mono text-sm">
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-pink text-black font-bold px-2 w-fit">Suno AI / Udio</span>
+                            <span>Generating full songs (lyrics + vocals + instrumentals) from text. Artists use it for rapid idea generation.</span>
+                        </li>
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-pink text-black font-bold px-2 w-fit">Google Veo / Sora</span>
+                            <span>High-fidelity video generation. Filmmakers use it for storyboarding scenes before shooting.</span>
+                        </li>
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-pink text-black font-bold px-2 w-fit">Midjourney / Flux</span>
+                            <span>Photorealistic assets for ads, saving thousands on stock photography and location shoots.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 2. FINANCE & MARKETS -->
+                <div class="border-4 border-white p-6 bg-gray-900 hover:border-neo-green transition-all">
+                    <h3 class="font-display text-2xl text-neo-green mb-4">FINANCE</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">GOAL: Data synthesis & Prediction.</p>
+                    <ul class="space-y-4 font-mono text-sm">
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-green text-black font-bold px-2 w-fit">BloombergGPT</span>
+                            <span>A 50-billion parameter model trained on financial data to analyze market trends and sentiment instantly.</span>
+                        </li>
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-green text-black font-bold px-2 w-fit">Algorithm Trading</span>
+                            <span>RL agents that execute trades based on news sentiment (like my TCB pipeline) faster than humans.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3. LEGAL & COMPLIANCE -->
+                <div class="border-4 border-white p-6 bg-gray-900 hover:border-neo-blue transition-all">
+                    <h3 class="font-display text-2xl text-neo-blue mb-4">LEGAL</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">GOAL: Contract review & Discovery.</p>
+                    <ul class="space-y-4 font-mono text-sm">
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-blue text-black font-bold px-2 w-fit">Harvey AI</span>
+                            <span>Backed by OpenAI. It reviews thousands of contract pages to find liabilities, saving lawyers hundreds of hours.</span>
+                        </li>
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-blue text-black font-bold px-2 w-fit">Casetext / CoCounsel</span>
+                            <span>Uses GPT-4 to pass the Bar exam and assist in legal research and brief writing.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 4. SOFTWARE ENGINEERING -->
+                <div class="border-4 border-white p-6 bg-gray-900 hover:border-neo-orange transition-all">
+                    <h3 class="font-display text-2xl text-neo-orange mb-4">ENGINEERING</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">GOAL: 10x Developer Productivity.</p>
+                    <ul class="space-y-4 font-mono text-sm">
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-orange text-black font-bold px-2 w-fit">Cursor / Copilot</span>
+                            <span>Autocomplete for code. It predicts entire functions. Engineers spend less time typing syntax, more time designing systems.</span>
+                        </li>
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-orange text-black font-bold px-2 w-fit">Devin / Bolt</span>
+                            <span>Autonomous engineers that can fix bugs and deploy apps end-to-end.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 5. HEALTHCARE -->
+                <div class="border-4 border-white p-6 bg-gray-900 hover:border-neo-red transition-all">
+                    <h3 class="font-display text-2xl text-neo-red mb-4">HEALTHCARE</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">GOAL: Saving lives via early detection.</p>
+                    <ul class="space-y-4 font-mono text-sm">
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-red text-black font-bold px-2 w-fit">Diagnostic AI</span>
+                            <span>Reading X-Rays/MRIs. AI detects lung cancer nodules 2 years before they are visible to human eye.</span>
+                        </li>
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-red text-black font-bold px-2 w-fit">AlphaFold 3</span>
+                            <span>Google DeepMind's tool that predicts protein structures, speeding up drug discovery from years to months.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 6. OPS & PRODUCTIVITY -->
+                <div class="border-4 border-white p-6 bg-gray-900 hover:border-neo-purple transition-all">
+                    <h3 class="font-display text-2xl text-neo-purple mb-4">OPERATIONS</h3>
+                    <p class="font-mono text-xs mb-4 text-gray-400">GOAL: Automate the boring stuff.</p>
+                    <ul class="space-y-4 font-mono text-sm">
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-purple text-black font-bold px-2 w-fit">Zapier AI</span>
+                            <span>Automates workflows. "If I get a lead on Facebook, email them and add to Slack."</span>
+                        </li>
+                        <li class="flex flex-col gap-1">
+                            <span class="bg-neo-purple text-black font-bold px-2 w-fit">NotebookLM</span>
+                            <span>Upload 50 PDFs, it becomes an expert. Creates podcasts summarizing your thesis.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: R&D vs INDUSTRY -->
+    <section id="research-industry" class="py-20 px-6 md:px-12 bg-neo-bg border-b-4 border-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12">06. R&D vs INDUSTRY</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-mono">
+                <!-- Academia -->
+                <div class="bg-white border-4 border-black p-8 shadow-hard transform md:-rotate-1">
+                    <div class="bg-neo-purple text-white inline-block px-2 py-1 mb-4 font-bold">ACADEMIA / RESEARCH</div>
+                    <ul class="space-y-6">
+                        <li>
+                            <strong class="block text-xl border-b-2 border-gray-200 pb-1">GOAL</strong>
+                            <span>Novelty & SOTA (State of the Art). Publishing Papers.</span>
+                        </li>
+                        <li>
+                            <strong class="block text-xl border-b-2 border-gray-200 pb-1">FOCUS</strong>
+                            <span>"Can we make a 1 Trillion parameter model?" Pushing math boundaries.</span>
+                        </li>
+                        <li>
+                            <strong class="block text-xl border-b-2 border-gray-200 pb-1">TRENDS</strong>
+                            <span>Explainable AI (XAI), Neuro-symbolic AI.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Industry -->
+                <div class="bg-neo-black text-white border-4 border-black p-8 shadow-hard transform md:rotate-1">
+                    <div class="bg-neo-green text-black inline-block px-2 py-1 mb-4 font-bold">INDUSTRY / APPLIED</div>
+                    <ul class="space-y-6">
+                        <li>
+                            <strong class="block text-xl border-b-2 border-gray-700 pb-1 text-neo-green">GOAL</strong>
+                            <span>ROI & Deployment. Solving real user problems.</span>
+                        </li>
+                        <li>
+                            <strong class="block text-xl border-b-2 border-gray-700 pb-1 text-neo-green">FOCUS</strong>
+                            <span>"Can we run this on a $50 phone in a village?" Latency & Cost.</span>
+                        </li>
+                        <li>
+                            <strong class="block text-xl border-b-2 border-gray-700 pb-1 text-neo-green">TRENDS</strong>
+                            <span>Sovereign AI (Bangladesh Initiatives), Vertical AI (Law/Med).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: MARKET TRENDS -->
+    <section id="market" class="py-20 px-6 md:px-12 scroll-mt bg-neo-yellow border-y-4 border-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12 border-b-4 border-black inline-block">07. MARKET STATS</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white border-4 border-black p-6 shadow-hard text-center">
+                    <div class="font-display text-5xl mb-2">37%</div>
+                    <div class="font-mono text-xs font-bold bg-black text-white inline-block px-2">CAGR (Growth)</div>
+                    <p class="text-xs mt-3 font-mono">Annual growth rate of AI market through 2030.</p>
+                </div>
+                <div class="bg-white border-4 border-black p-6 shadow-hard text-center">
+                    <div class="font-display text-5xl mb-2">97M</div>
+                    <div class="font-mono text-xs font-bold bg-black text-white inline-block px-2">NEW ROLES</div>
+                    <p class="text-xs mt-3 font-mono">WEF 2025 Prediction for AI-centric jobs.</p>
+                </div>
+                <div class="bg-white border-4 border-black p-6 shadow-hard text-center">
+                    <div class="font-display text-5xl mb-2 text-neo-red">-85M</div>
+                    <div class="font-mono text-xs font-bold bg-black text-white inline-block px-2">DISPLACED</div>
+                    <p class="text-xs mt-3 font-mono">Routine data entry & manual jobs declining.</p>
+                </div>
+                <div class="bg-white border-4 border-black p-6 shadow-hard text-center">
+                    <div class="font-display text-5xl mb-2 text-neo-green">SLM</div>
+                    <div class="font-mono text-xs font-bold bg-black text-white inline-block px-2">THE TREND</div>
+                    <p class="text-xs mt-3 font-mono">Small Language Models (On-Device) > Massive Cloud Models.</p>
+                </div>
+            </div>
+
+            <!-- The Shift: Junior vs Senior -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-mono mb-16">
+                <div class="bg-neo-black text-white border-4 border-black p-8 shadow-hard">
+                    <h3 class="font-display text-2xl mb-4 text-neo-red">THE "JUNIOR" CRISIS</h3>
+                    <p class="text-sm leading-relaxed">
+                        The demand for entry-level "code monkeys" (simple Python scripting) is dropping. AI can write basic code faster than a junior.
+                    </p>
+                </div>
+                <div class="bg-white border-4 border-black p-8 shadow-hard">
+                    <h3 class="font-display text-2xl mb-4 text-neo-green">THE "SENIOR" BOOM</h3>
+                    <p class="text-sm leading-relaxed">
+                        High demand for <strong>"AI Architects"</strong> who understand system design—how to chain multiple models together safely.
+                    </p>
+                    <div class="mt-4 bg-neo-bg p-3 border-2 border-black">
+                        <strong>Rise of AI Literacy:</strong> Marketing, HR, and Finance roles now require AI skills. It is no longer just for CS grads.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: FUTURE & ETHICS -->
+    <section id="future" class="py-20 px-6 md:px-12 scroll-mt bg-neo-black text-white">
+         <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12 text-neo-pink">08. THE FUTURE</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8 font-mono">
+                    <div class="border-l-4 border-neo-green pl-6">
+                        <strong class="text-neo-green text-xl">SMALL LANGUAGE MODELS (SLMs)</strong>
+                        <p class="text-sm mt-2 text-gray-300">
+                            Running AI on your phone (Edge AI) without internet. Crucial for rural Bangladesh projects where connectivity is poor.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-neo-blue pl-6">
+                        <strong class="text-neo-blue text-xl">SOVEREIGN AI</strong>
+                        <p class="text-sm mt-2 text-gray-300">
+                            Nations realizing they cannot rely on US/China for intelligence. Bangladesh needs its own "BanglaGPT" to preserve culture and data security.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-neo-purple pl-6">
+                        <strong class="text-neo-purple text-xl">REASONING MODELS</strong>
+                        <p class="text-sm mt-2 text-gray-300">
+                            Moving from "Pattern Matching" (guessing the next word) to "System 2 Thinking" (stopping to think before answering).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white text-black border-4 border-white p-8">
+                    <h3 class="font-display text-2xl mb-4">THE "HUMAN IN THE LOOP"</h3>
+                    <div class="font-mono text-sm">
+                        <p class="mb-4 font-bold bg-neo-yellow inline-block px-1">THE "LAST MILE" PROBLEM</p>
+                        <p>
+                            AI can do 80% of the work, but the last 20% (dealing with edge cases, empathy, critical judgment) requires a human.
+                        </p>
+                        <div class="mt-6 border-t-2 border-black pt-4">
+                            <strong>My Example:</strong> In ID verification, AI flags a face as "mismatch." A human officer must decide if it’s actually a mismatch or just a bad photo/aging. 
+                            <br><br>
+                            <strong>AI Assists. Human Decides.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- SECTION 9: MY CASE STUDIES (THE CORE) -->
+    <section id="journey" class="py-20 px-6 md:px-12 scroll-mt bg-white border-t-4 border-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl mb-12 border-b-4 border-black inline-block text-neo-red">09. BUILD LOG</h2>
+            <p class="font-mono text-lg mb-12 max-w-3xl">
+                Theory is different from production. Here is a log of the systems I've worked on, the libraries explored, and the technical realities of deploying AI solutions in Bangladesh.
+            </p>
+
+            <div class="space-y-16">
+                
+                <div class="border-l-8 border-neo-blue pl-6 md:pl-12 py-2">
+                    <h3 class="font-display text-3xl md:text-4xl mb-4">1. FACE RECOGNITION PIPELINE</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 font-mono text-sm leading-relaxed">
+                            <strong>The Challenge:</strong> Implementing robust face recognition that works reliably across different lighting conditions and angles for integration into multiple downstream systems.
+                            <br><br>
+                            <strong>The Evolution:</strong> It was an iterative process of finding the right backbone:
+                            <ul class="list-disc ml-6 mt-2 mb-4">
+                                <li><em>Iteration 1:</em> <strong>Dlib</strong> (Good baseline, but struggled with scalability).</li>
+                                <li><em>Iteration 2:</em> <strong>DeepFace</strong> (Better abstraction, but heavy).</li>
+                                <li><em>Iteration 3:</em> <strong>InsightFace (ArcFace)</strong>.</li>
+                            </ul>
+                            
+                            <br>
+                            <strong>The Verdict:</strong> <span class="bg-neo-blue px-1 text-white border border-black">InsightFace (ArcFace)</span> proved to be the most efficient accuracy-wise for our specific use cases and became the standard module for our integrations.
+                        </div>
+                        <div class="bg-neo-bg border-4 border-black p-4 text-xs font-mono h-fit">
+                            <strong class="block mb-2 border-b-2 border-black pb-1">TECH STACK:</strong>
+                            - Python<br>
+                            - InsightFace (ArcFace)<br>
+                            - REST API Integration<br>
+                            - ONNX Runtime
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-l-8 border-neo-red pl-6 md:pl-12 py-2">
+                    <h3 class="font-display text-3xl md:text-4xl mb-4">2. ID DOCUMENT LIVENESS (TCB)</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 font-mono text-sm leading-relaxed">
+                            <strong>The Context:</strong> Used during the scanning of TCB cards to provide subsidized products. The goal was to prevent fraud by classifying input images in real-time.
+                            <br><br>
+                            <strong>The Classification:</strong> The model had to distinguish between <em>Genuine, Blurry/Unclear, Screen Replay, Photocopy, Critical Spoof,</em> and <em>Incomplete Images</em>.
+                            <br><br>
+                            <strong>Model Selection:</strong> We trained on a custom dataset and benchmarked several architectures:
+                            <ul class="list-disc ml-6 mt-2 mb-4">
+                                <li>Swin Transformer</li>
+                                <li>DinoV2</li>
+                                <li><strong>ViT (Vision Transformer)</strong></li>
+                            </ul>
+                            
+
+
+                            <br>
+                            <strong>The Result:</strong> While DinoV2 is powerful, <span class="bg-neo-red px-1 text-white border border-black">ViT provided the best balance</span> of inference speed and accuracy for this specific deployment environment.
+                        </div>
+                        <div class="bg-neo-bg border-4 border-black p-4 text-xs font-mono h-fit">
+                            <strong class="block mb-2 border-b-2 border-black pb-1">TECH STACK:</strong>
+                            - PyTorch / Vision Transformers<br>
+                            - Custom Dataset Engineering<br>
+                            - Real-time Inference Optimization
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-l-8 border-neo-yellow pl-6 md:pl-12 py-2">
+                    <h3 class="font-display text-3xl md:text-4xl mb-4">3. BENGALI NEWS INTELLIGENCE</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 font-mono text-sm leading-relaxed">
+                            <strong>The Objective:</strong> To derive market insights by analyzing unstructured data from 40+ daily Bengali newspapers.
+                            <br><br>
+                            <strong>The Workflow:</strong>
+                            1. <strong>Scraping:</strong> Daily ingestion of articles from diverse local sources.<br>
+                            2. <strong>Clustering:</strong> Grouping similar stories to detect trending narratives.<br>
+                            3. <strong>Tagging:</strong> Automated classification of content.<br>
+                            4. <strong>Vector Search:</strong> Enabling semantic search to find information from various angles (e.g., "commodity crisis") even without exact keyword matches.
+                            <br><br>
+                            
+
+
+                        </div>
+                        <div class="bg-neo-bg border-4 border-black p-4 text-xs font-mono h-fit">
+                            <strong class="block mb-2 border-b-2 border-black pb-1">TECH STACK:</strong>
+                            - Web Scraping (Scrapy/Selenium)<br>
+                            - Clustering Algorithms (K-Means)<br>
+                            - Vector Databases<br>
+                            - NLP (Bengali)
+                            - Apache Airflow
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-l-8 border-neo-green pl-6 md:pl-12 py-2">
+                    <h3 class="font-display text-3xl md:text-4xl mb-4">4. RAG & CUSTOMER SUPPORT</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 font-mono text-sm leading-relaxed">
+                            <strong>The Application:</strong> Building conversational interfaces for customer support systems that go beyond static scripts.
+                            <br><br>
+                            <strong>The Tech:</strong> Utilizing <strong>RAG (Retrieval Augmented Generation)</strong> to ground LLM responses in specific company data. This allows the chatbots to answer queries accurately based on updated knowledge bases rather than hallucinating answers.
+                            <br><br>
+                            
+
+
+                        </div>
+                        <div class="bg-neo-bg border-4 border-black p-4 text-xs font-mono h-fit">
+                            <strong class="block mb-2 border-b-2 border-black pb-1">TECH STACK:</strong>
+                            - LLMs (Large Language Models)<br>
+                            - RAG Architecture<br>
+                            - Vector Stores<br>
+                            - Conversational AI
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-l-8 border-neo-purple pl-6 md:pl-12 py-2">
+                    <h3 class="font-display text-3xl md:text-4xl mb-4">5. CUSTOM VOICE AI (STT/TTS)</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 font-mono text-sm leading-relaxed">
+                            <strong>The Problem:</strong> Standard models (Google/OpenAI) often fail with Bengali dialects (Sylheti, Chittagonian, etc.). True <strong>Sovereign AI</strong> requires models that understand the local context.
+                            <br><br>
+                            <strong>The Work (In Progress):</strong> We are actively building Custom STT (Speech to Text) and TTS (Text to Speech) pipelines.
+                            <br><br>
+                            <strong>Current Status:</strong> <span class="bg-neo-purple px-1 text-white border border-black">Fine-tuning OpenAI's Whisper</span> on a custom dataset of dialect-heavy audio. The main engineering challenge right now is optimizing the Word Error Rate (WER) to handle rapid colloquial speech better than the base models.
+                        </div>
+                        <div class="bg-neo-bg border-4 border-black p-4 text-xs font-mono h-fit">
+                            <strong class="block mb-2 border-b-2 border-black pb-1">TECH STACK:</strong>
+                            - Whisper Fine-tuning (STT)<br>
+                            - Custom Dialect Datasets<br>
+                            - Low-Rank Adaptation (LoRA)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-neo-black text-white py-20 text-center font-mono border-t-4 border-black">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-display text-4xl md:text-6xl mb-8 text-neo-green">THE CONCLUSION?</h2>
+            <div class="bg-white text-black border-4 border-white p-8 md:p-12 transform -rotate-2 shadow-[8px_8px_0px_0px_#23a6d5] mb-12">
+                <p class="text-xl md:text-3xl font-bold leading-tight">
+                    "The question isn't 'Will AI replace me?'<br>
+                    The question is 'How much faster can I build?'<br>
+                    <span class="text-neo-blue">AI buys you time. Spend it on what matters.</span>"
+                </p>
+            </div>
+            <p class="text-sm text-gray-400">
+                Made for YSSE Academy Guest Session | 2025<br>
+                <!-- Based on Real-World Experience -->
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
